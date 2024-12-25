@@ -1,0 +1,12 @@
+{% extends "template/app.jinja" %}
+{% block title %} Pagina Inicial {% endblock %}
+{% block content %}
+    <div class="container">
+        <div class="content">
+            <form action="/add_ball" method="post">
+                <input type="number" name="ball"/>
+                <input type="submit" value="Salvar"/>
+            </form>
+        </div>
+    </div>
+{% endblock %}

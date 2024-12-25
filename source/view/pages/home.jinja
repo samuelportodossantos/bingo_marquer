@@ -1,0 +1,12 @@
+{% extends "template/app.jinja" %}
+{% block title %} Pagina Inicial {% endblock %}
+{% block content %}
+    <div class="container">
+        <div class="content">
+            {% for ball in balls %}
+            <div class="ball">{{ball}}</div>     
+            {% endfor %}
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/socket.js') }}"></script>
+{% endblock %}
